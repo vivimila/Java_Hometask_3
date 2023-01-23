@@ -12,11 +12,16 @@ public class Program {
         ArrayList<Integer> list2 = new ArrayList<>();
         Random rnd = new Random();
         for (int i = 0; i < 20; i++){
-            list1.add(rnd.nextInt(100));
-            list2.add(rnd.nextInt(100));
+            list1.add(rnd.nextInt(40));
+            list2.add(rnd.nextInt(40));
         }
         System.out.println(list1);
         System.out.println(list2);
+
+        for (Object o : list2) {
+            list1.remove(o);
+        }
+        System.out.println(list1); 
 
     }
         
