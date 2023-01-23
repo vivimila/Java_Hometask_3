@@ -3,8 +3,8 @@
 // Отсортировать первый список методом sort класса Collections.
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
-
 
 public class Program {
     public static void main(String[] args) {
@@ -21,8 +21,7 @@ public class Program {
         for (Object o : list2) {
             list1.remove(o);
         }
-        System.out.println(list1); 
-
-    }
-        
+        Collections.sort(list1);
+        System.out.println(list1);
+    }     
 }
